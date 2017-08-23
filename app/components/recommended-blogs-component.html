@@ -1,0 +1,9 @@
+<div class="controls_section follow_list user_list">
+    <li class="item" data-ng-repeat="blog in recommendedBlogsController.recommendedBlogs track by $index">
+        <a data-ng-href="{{'http://' + blog + '.tumblr.com'}}" target="_blank" class="follow_list_item_blog blog has_follow_button has-worded-follow-button" data-pt="false" data-log-index="0" data-peepr="{&quot;tumblelog&quot;:&quot;grayskymorning&quot;}">
+            <div class="hide_overflow  has_follow_button"><span class="tumblelog_title"> {{blog}} </span>
+            </div>
+            <div class="avatar" style="background-image:url('https://67.media.tumblr.com/avatar_e5876012afd2_128.png')"><span class="blog-name-letter" data-ng-bind="recommendedBlogsController._searchStore.getFirstLetter(blog)"></span><img class="avatar_img" alt=""></div>
+        </a> <a class="follow-button-right worded-follow-button" target="_blank" data-follow-button="" data-ng-href="{{'http://tumblr.com/follow/' + blog}}" data-tumblelog-name="grayskymorning" data-follow-source="FOLLOW_SOURCE_RECOMMENDED_BLOG" data-peepr="{&quot;tumblelog&quot;:&quot;grayskymorning&quot;}"><div class="follow-text" title="Follow">Follow</div></a> </li>
+</div>
+<div class="show-more-blogs" style="display: none" data-tumblelogs-drawer="">Show more blogs</div>

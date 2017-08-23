@@ -1,0 +1,61 @@
+<article data-ng-repeat="post in postController.postsResults track by $index" class="grid-item is_regular post_tumblelog_fbb1b724850708ef2faf4a4363aabefa not_mine is_original with_permalink no_source generic_source reblog_ui_refresh post_brick post post_fade reblog_header">
+    <section class="post_content" data-subview="content">
+        <div class="post_media " data-subview="media" data-lightbox="{&quot;low_res&quot;:&quot;https:\/\/65.media.tumblr.com\/ebd9e18ad6e3db0edab6d2de6b56b0b5\/tumblr_ocfxsagR9J1qbx2beo1_500.jpg&quot;,&quot;high_res&quot;:&quot;https:\/\/66.media.tumblr.com\/ebd9e18ad6e3db0edab6d2de6b56b0b5\/tumblr_ocfxsagR9J1qbx2beo1_1280.jpg&quot;,&quot;height&quot;:864,&quot;width&quot;:711}"><div class="post-img-container" style="{{'height: ' + ((postController.colWidth / post.image.width) * post.image.height) + 'px;'}}"><a data-ng-href="{{post.short_url}}" target="_blank"><img data-ng-if="post.image.url != ''" data-ng-src="{{post.image.url}}" style="{{'height: ' + ((postController.colWidth / post.image.width) * post.image.height) + 'px;'}}" class="photo"></a></div>
+            <div class="photo-post-icons"></div>
+        </div>
+        <div class="post_content_inner">
+            <div class="post_body" data-subview="body">
+                <div data-ng-bind-html="postController.renderHtml(post._highlightResult.summary.value)"></div>
+            </div>
+        </div>
+    </section>
+    <header class="post_header post_info" data-context-path="ASgq_1cDAAb96Q" data-subview="header">
+        <div class="tumblelog_info " data-subview="info">
+            <a data-ng-href="{{'http://' + post.blog_name + '.tumblr.com'}}" data-popover-trigger="" target="_blank">
+                <div class="tumblelog_avatar" style="background-image: url('https://66.media.tumblr.com/avatar_cecee850bc2d_30.png');"><span class="blog-name-letter" data-ng-bind="postController._searchStore.getFirstLetter(post.blog_name)"></span></div>
+            </a>
+            <div class="post-info-tumblelogs">
+                <div class="post-info-post-tumblelog">
+                    <div class="post-info-post-tumblelog-info">
+                    <div class="post-info-tumblelog">
+                        <a data-ng-href="{{'http://' + post.blog_name + '.tumblr.com'}}" data-popover-trigger="" data-peepr="{&quot;tumblelog&quot;:&quot;maeamian&quot;,&quot;postId&quot;:&quot;151375068502&quot;}" title="maeamian" target="_blank" data-ng-bind-html="postController.renderHtml(post._highlightResult.blog_name.value)"></a>
+                    </div>
+                    <a class="follow_link worded-follow-button" target="_blank" data-ng-href="{{'http://tumblr.com/follow/' + post.blog_name}}" data-subview="follow">
+                        <div class="follow-text" title="Follow">Follow</div>
+                        <div class="unfollow-text" title="Unfollow">Unfollow</div>
+                    </a>
+                        </div>
+                    <span>
+                    {{postController.convertToDate(post.timestamp) | date:"MM/dd/yyyy"}}
+                        </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="post_tags" data-subview="tags">
+        <div class="post_tags_inner" data-draggabletags=""><span class="post_tag" data-ng-repeat="tag in postController._searchStore.orderTags(post._highlightResult.tags)"><span data-ng-bind-html="postController.renderHtml(tag.value)"></span></span></div>
+    </section>
+    <div class="post_footer clearfix" data-subview="footer">
+        <div class="post_notes" data-subview="notes">
+            <div class="post_notes_inner">
+                <div class="post_notes_label note_count"><a target="_blank" data-ng-href="{{post.short_url}}" class="note_link_current">{{post.note_count | number}} notes</a>
+                    <div class="notes_outer_container popover popover_gradient nipple_on_left" style="display: none;">
+                        <div class="notes_container popover_inner">
+                            <div class="popover_scroll">
+                                <ol class="notes"></ol>
+                                <div class="more_notes_link_container"><span class="notes_loading">Loading...</span><a class="more_notes_link" style="display:none;" data-next="" rel="nofollow" href="#">Show more notes</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post_controls" role="toolbar" data-subview="controls">
+            <div class="post_controls_inner">
+                <div class="post_control post-control-icon share"title="Share" data-subview="share"></div>
+                <a class="post_control post-control-icon reblog" target="_blank" title="Reblog" data-subview="reblog"></a>
+                <div class="post_control post-control-icon like" title="Like" data-subview="like"></div>
+            </div>
+        </div>
+    </div>
+</article>

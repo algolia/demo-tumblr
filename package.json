@@ -1,0 +1,38 @@
+{
+  "name": "tumblr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1"
+  },
+  "dependencies": {
+    "gulp-clean": "^0.3.2",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "jspm": "^0.16.46",
+    "path": "^0.12.7",
+    "systemjs": "^0.19.39",
+    "systemjs-builder": "^0.15.32"
+  },
+  "jspm": {
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.5.8",
+      "lodash": "npm:lodash@^4.16.4",
+      "masonry-layout": "npm:masonry-layout@^4.1.1",
+      "moment": "npm:moment@^2.15.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}

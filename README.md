@@ -1,1 +1,1 @@
-# demo-tumblr
+# Tumblr demo with Algolia

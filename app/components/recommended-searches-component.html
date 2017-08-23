@@ -1,0 +1,3 @@
+<ol class="discover-search-terms" data-search-term-container="">
+    <li data-ng-repeat="recommendation in recommendedSearchesController.recommendedSearches | limitTo:20 track by $index" class="discover-search-term-item" data-ng-click="recommendedSearchesController.updateSearch(recommendation)"><a class="discover-search-term"><span class="search-term-name">{{recommendation}}</span></a></li>
+</ol>
