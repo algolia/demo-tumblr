@@ -67,6 +67,7 @@
 }
 
 .search_form_row {
+    height: 46px;
     display: flex;
     align-items: center;
     .search_form_field {
@@ -221,15 +222,17 @@
 }
 
 .l-header-container--refresh .l-header {
-    min-height: 54px;
-    height: auto;
+    // min-height: 54px;
+    // height: auto;
+    height: 54px;
 }
 
 .logo {
-    height: 54px!important;
+    // height: 54px!important;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-35%);
+    padding: 10px 20px 10px 20px;
 }
 
 .ui_search {
