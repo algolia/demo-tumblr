@@ -187,8 +187,25 @@
     padding: 0!important;
 }
 
+.control_text.active {
+    color: hsla(0,0%,100%,.6);
+}
+
+.filter_popover_menu {
+    width: 140px;
+}
+
 .filter_popover.show {
     display: block!important;
+}
+
+.filter_popover_arrow {
+    color: hsla(0,0%,100%,.6);
+    float: right;
+}
+
+.icon {
+    padding-right: 10px;
 }
 
 .menu_item.post_type {
@@ -226,7 +243,7 @@
 .l-header-container--refresh .l-header {
     // min-height: 54px;
     // height: auto;
-    height: 54px;
+    height: 60px;
 }
 
 .logo {
