@@ -191,10 +191,6 @@
     color: hsla(0,0%,100%,.6);
 }
 
-.filter_popover_menu {
-    width: 140px;
-}
-
 .filter_popover.show {
     display: block!important;
 }
@@ -222,6 +218,35 @@
 
 .search_control_items {
     display:flex;
+}
+
+.search_control_items .menu_inner {
+    left: 0;
+    min-width: 176px;
+    padding: 4px 0;
+    color: #444;
+}
+
+// Fixing the dropdowns
+
+.filter_popover_menu {
+    width: 140px;
+    padding: 100px 20px 0px 20px;
+}
+
+.filter_popover .menu_inner {
+    min-width: 185px;
+    max-width: 300px;
+    color: #444;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 4px 9px rgba(0,0,0,.439216);
+    z-index: 20;
+}
+
+.menu_item {
+    line-height: 2;
+    padding: 2px 2px 0px 15px;  
 }
 
 .search-result-tag {
