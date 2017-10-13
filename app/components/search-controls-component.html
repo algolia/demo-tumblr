@@ -4,18 +4,12 @@
             <div class="search_control_items">
                 <div class="filter_popover_menu search_control_item search_control" data-search-action-type="post_mode" style="display: block;"><a href="#" class="launch_button search_control_button"><i class="filter_popover_arrow icon_arrow_carrot_down"></i><span class="control_text" data-ng-click="searchControlsController.toggleSortOptionVisibility()">{{searchControlsController._searchStore.currentIndex === 'posts_v2' ? 'Most relevant' : 'Most recent'}}</span></a>
                     <div class="filter_popover popover_v2" data-ng-class="{'show': searchControlsController.sortOptionVisible}" style="top: 0px; left: -39px;">
-                        <div class="menu_inner">
-                            <span class="filter_popover_nipple" style="left: 136px;"></span>
-                            <a data-ng-click="searchControlsController.updatePostsIndex(searchControlsController.INDEX)" class="menu_item" data-search-action-value="top"
-                                data-action-changes-path="true">
-                                <i class="icon icon_diamond"></i>
-                                <span class="menu_item_text">Most relevant</span>
-                            </a>
-                            <a data-ng-click="searchControlsController.updatePostsIndex(searchControlsController.TIMESTAMP_INDEX)" class="menu_item active"
-                                data-search-action-value="recent" data-action-changes-path="true">
-                                <i class="icon icon_queue_small"></i>
-                                <span class="menu_item_text">Most recent</span>
-                            </a>
+                        <div class="menu_inner"><span class="filter_popover_nipple" style="left: 136px;"></span>
+                            <div data-ng-click="searchControlsController.updatePostsIndex(searchControlsController.INDEX)"
+                                class="menu_item" data-search-action-value="top" data-action-changes-path="true"><i class="icon icon_diamond"></i><span class="menu_item_text">Most relevant</span></div>
+                            <div
+                                data-ng-click="searchControlsController.updatePostsIndex(searchControlsController.TIMESTAMP_INDEX)"
+                                class="menu_item active" data-search-action-value="recent" data-action-changes-path="true"><i class="icon icon_queue_small"></i><span class="menu_item_text">Most recent</span></div>
                         </div>
                     </div>
                 </div>
