@@ -220,6 +220,10 @@
     color: white;
 }
 
+.search_control_items {
+    display:flex;
+}
+
 .search-result-tag {
     &-container {
         display: flex!important;
