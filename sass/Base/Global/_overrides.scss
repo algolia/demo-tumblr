@@ -169,6 +169,12 @@
     }
 }
 
+.left_controls {
+    position: relative;
+    top: 20px;
+    left: -80px;
+}
+
 .popover_menu_item .thumb .blog-name-letter {
     color: rgba(255, 255, 255, .8);
 }
@@ -193,6 +199,11 @@
 
 .filter_popover.show {
     display: block!important;
+}
+
+.filter_popover {
+    position: relative;
+    top: 5px;
 }
 
 .filter_popover_arrow {
@@ -235,8 +246,6 @@
 }
 
 .filter_popover .menu_inner {
-    min-width: 185px;
-    max-width: 300px;
     color: #444;
     background: #fff;
     border-radius: 3px;
