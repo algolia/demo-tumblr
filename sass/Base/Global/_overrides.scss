@@ -201,11 +201,6 @@
     display: block!important;
 }
 
-.filter_popover {
-    position: relative;
-    top: 5px;
-}
-
 .filter_popover_arrow {
     color: hsla(0,0%,100%,.6);
     float: right;
@@ -233,7 +228,7 @@
 
 .search_control_items .menu_inner {
     left: 0;
-    min-width: 176px;
+    min-width: 150px;
     padding: 4px 0;
     color: #444;
 }
