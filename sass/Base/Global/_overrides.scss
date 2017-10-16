@@ -198,17 +198,27 @@
     font-weight: 700;
 }
 
+.filter_popover {
+    visibility: hidden;
+}
+
 .filter_popover.show {
     display: block!important;
+    visibility: visible;
 }
 
 .filter_popover_arrow {
     color: hsla(0,0%,100%,.6);
-    float: right;
+    padding-right: 2px;
 }
 
 .icon {
     padding-right: 10px;
+}
+
+.search_control_items .menu_item:hover {
+    background: #e4f0f7;
+    color: #36465d;
 }
 
 .menu_item.post_type {
@@ -233,8 +243,6 @@
     padding: 4px 0;
     color: #444;
 }
-
-// Fixing the dropdowns
 
 .filter_popover_menu {
     width: 140px;
