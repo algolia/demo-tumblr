@@ -2,7 +2,7 @@
     <div class="left_controls">
         <div class="search_control post_mode">
             <div class="search_control_items">
-                <div class="filter_popover_menu search_control_item search_control post_control" data-search-action-type="post_mode" style="display: block;">
+                <div class="filter_popover_menu search_control_item search_control post_sort_filter_menu" data-search-action-type="post_mode" style="display: block;">
                     <a href="#" class="launch_button search_control_button" data-ng-click="searchControlsController.toggleSortOptionVisibility()">
                         <i class="filter_popover_arrow icon_arrow_carrot_down"></i>
                         <span class="control_text">{{searchControlsController._searchStore.currentIndex === 'posts_v2' ? 'Most relevant' : 'Most recent'}}</span>
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="filter_popover_menu search_control_item post_type_filter_menu search_control" data-search-action-type="filter_post_type"
+                <div class="filter_popover_menu search_control_item search_control post_type_filter_menu " data-search-action-type="filter_post_type"
                     style="display: block;">
                     <a href="#" class="launch_button search_control_button" data-ng-click="searchControlsController.togglePostTypeVisibility()">
                         <i class="filter_popover_arrow icon_arrow_carrot_down"></i>
