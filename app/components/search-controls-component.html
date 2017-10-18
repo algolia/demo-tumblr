@@ -8,7 +8,9 @@
                         <span class="control_text">{{searchControlsController._searchStore.currentIndex === 'posts_v2' ? 'Most relevant' : 'Most recent'}}</span>
                     </a>
                     <div class="filter_popover popover_v2" data-ng-class="{'show': searchControlsController.sortOptionVisible}" style="top: 0px; left: -39px;">
-                        <div class="menu_inner"><span class="filter_popover_nipple" style="left: 136px;"></span>
+
+                        <div class="menu_inner">
+                            <span class="filter_popover_nipple" style="left: 136px;"></span>
                             <div data-ng-click="searchControlsController.updatePostsIndex(searchControlsController.INDEX)" class="menu_item" data-search-action-value="top"
                                 data-action-changes-path="true"><i class="icon icon_diamond"></i><span class="menu_item_text">Most relevant</span></div>
                             <div data-ng-click="searchControlsController.updatePostsIndex(searchControlsController.TIMESTAMP_INDEX)" class="menu_item active"
@@ -23,8 +25,12 @@
                         <span class="control_text active">{{searchControlsController.currentType === "" ? "Filter by post type" : searchControlsController.currentType}}</span>
                     </a>
                     <div class="filter_popover post-type popover_v2" data-ng-class="{'show': searchControlsController.postTypeVisible}" style="top: 0px; left: -19px;">
-                        <div class="menu_inner"><span class="filter_popover_nipple" style="left: 156px;"></span>
-                            <div data-ng-click="searchControlsController.updatePostTypes('')" class="menu_item post_all_filter" data-search-action-value="all"><i class="icon icon_posts"></i><span class="menu_item_text">All posts</span></div>
+                        <div class="menu_inner">
+                            <span class="filter_popover_nipple" style="left: 156px;"></span>
+                            <div data-ng-click="searchControlsController.updatePostTypes('')" class="menu_item post_all_filter" data-search-action-value="all">
+                                <i class="icon icon_posts"></i>
+                                <span class="menu_item_text">All posts</span>
+                            </div>
                             <hr class="item_divider">
                             <div data-ng-click="searchControlsController.updatePostTypes(type)" data-ng-repeat="type in searchControlsController.postTypes"
                                 data-ng-class="'menu_item post_type post_' + type + '_filter'" data-search-action-value="{{type}}"><i data-ng-class="'icon icon_post_' + type + '_small'"></i><span data-ng-class="{{'menu_item_' + type}}">{{type}}</span></div>
